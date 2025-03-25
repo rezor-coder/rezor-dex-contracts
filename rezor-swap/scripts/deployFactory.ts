@@ -19,7 +19,8 @@ async function main() {
     await factory.waitForDeployment();
 
     // Step 5: Log the deployed contract's address
-    console.log("SaitaSwapFactory deployed to:", await factory.getAddress());
+    const factoryAddress = await factory.getAddress();
+    console.log("SaitaSwapFactory deployed to:", factoryAddress);
 }
 
 // Execute the main function and handle errors

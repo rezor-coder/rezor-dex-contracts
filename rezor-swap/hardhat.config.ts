@@ -66,21 +66,21 @@ const config: HardhatUserConfig = {
     //     },
     //   }, 
     ],
-    overrides: {
-      "contracts/SaitaRouter.sol": {  // Specific file override
-        version: "0.6.6",
-      },
-      "contracts/SaitaFactory.sol": { // Another specific file
-        version: "0.5.16",
-      },
-      "contracts/SaitaSwapERC20.sol": { // Directory override (all files within)
-        version: "0.5.16",
-      },
-       "contracts/SaitaSwapPair.sol": { // Directory override (all files within)
-        version: "0.5.16",
-      },
-      // Add more overrides for other files or directories
-    }
+    // overrides: {
+    //   "contracts/SaitaRouter.sol": {  // Specific file override
+    //     version: "0.6.6",
+    //   },
+    //   "contracts/SaitaFactory.sol": { // Another specific file
+    //     version: "0.5.16",
+    //   },
+    //   "contracts/SaitaSwapERC20.sol": { // Directory override (all files within)
+    //     version: "0.5.16",
+    //   },
+    //    "contracts/SaitaSwapPair.sol": { // Directory override (all files within)
+    //     version: "0.5.16",
+    //   },
+    //   // Add more overrides for other files or directories
+    // }
   },
   paths: {
     sources: "./contracts",
